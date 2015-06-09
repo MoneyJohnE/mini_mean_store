@@ -8,6 +8,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "./client")));
 
+app.get('/', function(req,res) {
+	res.render('index');
+})
+
+
+
 require('./config/mongoose.js');
 require('./config/routes.js')(app);
 
