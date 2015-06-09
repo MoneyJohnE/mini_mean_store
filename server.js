@@ -14,8 +14,8 @@ app.get('/', function(req,res) {
 
 
 
-require('./config/mongoose.js');
-require('./config/routes.js')(app);
+// require('./config/mongoose.js');
+// require('./config/routes.js')(app);
 
 var port = process.env.PORT || 8080;
 
