@@ -3,9 +3,9 @@ var orders = require("../server/controllers/orders.js");
 
 module.exports = function(app) {
 	
-	app.get('/', function(req,res) {
-		res.render('index');
-	})
+	// app.get('/', function(req,res) {
+	// 	res.render('index');
+	// })
 
 	app.get("/customers", function(req, res) {
 		console.log('here');
