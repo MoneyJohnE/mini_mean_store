@@ -1,7 +1,9 @@
 <div ng-controller="customersController">
-	<p>Search: <input type="text" ng-model="filter_name"></p>
+	<div class="form-group">
+		<input class="form-control" type="text" ng-model="filter_name" placeholder="Search..."></p>
+	</div>
 	<!-- <p ng-show='errors'>{{errors}}</p> -->
-	<table>
+	<table class="table table-striped">
 		<thead>
 			<tr>
 				<th>Customer Name</th>
@@ -18,10 +20,13 @@
 		</tbody>
 	</table>
 	<p>Add a New Customer</p>
-	<form ng-submit='addCustomer()'>
-		<p>Customer Name: <input type="text" ng-model="newCustomer.name">
-		<input type="hidden" ng-model="newCustomer.date"> 
-		<input type="submit" value="Add"></p>
+	<form ng-submit='addCustomer()' class="form-inline">
+		<div class="form-group">
+			<label>Customer Name: </label>
+			<input class="form-control" type="text" ng-model="newCustomer.name">
+			<input type="hidden" ng-model="newCustomer.date"> 
+			<input type="submit" value="Add" class="btn btn-primary">
+		</div>
 		<!-- <p ng-bind="error"></p> -->
 	</form>
-</div>
+</div>  
