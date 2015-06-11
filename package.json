@@ -1,5 +1,5 @@
 {
-  "name": "Full_MEAN_Mini_Store",
+  "name": "Full_Mean-Mini_Store",
   "description": "Our sample Node to Heroku app",
   "main": "server.js",
   "scripts": {
@@ -11,5 +11,6 @@
     "express": "~4.2.0",
     "ejs": "~1.0.0",
     "mongoose": "^4.0.1"
+    "mean"
   }
-}
+} 
